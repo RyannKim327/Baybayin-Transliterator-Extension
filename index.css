@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 	outline: none;
 	background-color: transparent;
+	user-select: none;
 }
 
 body{
@@ -35,9 +36,12 @@ body{
 	color: #ffffff;
 }
 
-.container > h3 {
+.container > h1 {
 	overflow-x: auto;
 	cursor: pointer;
+	text-align: center;
+	font-weight: normal;
+	max-lines: 5;
 }
 
 @media (max-width: 400px) {
