@@ -12,6 +12,8 @@ body{
 	color: #ffffff;
 	min-height: 75vh;
 	width: 100%;
+	border-radius: 1em;
+	padding: 1em;
 }
 
 .container{
@@ -35,6 +37,7 @@ body{
 
 .container > h3 {
 	overflow-x: auto;
+	cursor: pointer;
 }
 
 @media (max-width: 400px) {
