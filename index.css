@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	outline: none;
+	background-color: transparent;
+}
+
+body{
+	background-color: #23233e;
+	color: #ffffff;
+	min-height: 75vh;
+	width: 100%;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	min-width: 90%;
+	margin: 1em;
+	padding: .5em;
+	border-radius: .5em;
+	box-shadow: 3px 3px 5px #000000,
+	-3px -3px 5px #ffffffaa,
+	3px 3px 5px inset #00000050,
+	-3px -3px 2px inset #ffffff50;
+}
+
+.container > textarea{
+	min-width: 100%;
+	resize: none;
+	color: #ffffff;
+}
+
+.container > h3 {
+	overflow-x: auto;
+}
+
+@media (max-width: 400px) {
+	.container > textarea{
+		min-width: 100%;
+	}
+}
