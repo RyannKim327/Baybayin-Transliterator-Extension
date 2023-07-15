@@ -140,13 +140,21 @@ const $ = (id) => {
 
 $("txt").onkeyup = (e) => {
 	const txt = $("txt").value
-	$("result").textContent =toBaybayin(txt)
+	if(txt == ""){
+		$("result").textContent = "Result Here"
+	}else{
+		$("result").textContent = toBaybayin(txt)
+	}
 }
 
 $("result").onclick = () => {
-	navigator.clipboard.writeText($("result").textContent)
-	$("note").textContent = "Copied on clipboard"
-	setTimeout(() => {
-		$("note").textContent = "This program is developed by RyannKim327. To copy the baybayin text, kindly click on the baybayin text itself."
-	}, 1500)
+	if($("note").textContent == "" || $("result").textContent == "Result Here"){
+		$("result").textContent = "Result Here"
+	}else{
+		navigator.clipboard.writeText($("result").textContent)
+		$("note").textContent = "Copied on clipboard"
+		setTimeout(() => {
+			$("note").textContent = "This program is developed by RyannKim327. To copy the baybayin text, kindly click on the baybayin text itself."
+		}, 1500)
+	}
 }

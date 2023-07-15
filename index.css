@@ -7,6 +7,10 @@
 	background-color: transparent;
 	user-select: none;
 }
+@font-face{
+	font-family: "baybayin";
+	src: url("font.ttf");
+}
 
 body{
 	background-color: #23233e;
@@ -34,6 +38,7 @@ body{
 	min-width: 100%;
 	resize: none;
 	color: #ffffff;
+	font-size: large;
 }
 
 .container > h1 {
@@ -42,6 +47,7 @@ body{
 	text-align: center;
 	font-weight: normal;
 	max-lines: 5;
+	font-family: "baybayin";
 }
 
 @media (max-width: 400px) {
