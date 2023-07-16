@@ -1,3 +1,10 @@
+:root{
+	--bg: #23233e;
+	--color: #ffffff;
+	--shadow1: #000000;
+	--shadow2: #ffffff;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -13,8 +20,8 @@
 }
 
 body{
-	background-color: #23233e;
-	color: #ffffff;
+	background-color: var(--bg);
+	color: var(--color);
 	min-height: 75vh;
 	width: 100%;
 	border-radius: 1em;
@@ -28,17 +35,39 @@ body{
 	margin: 1em;
 	padding: .5em;
 	border-radius: .5em;
-	box-shadow: 3px 3px 5px #000000,
-	-3px -3px 5px #ffffffaa,
-	3px 3px 5px inset #00000050,
-	-3px -3px 2px inset #ffffff50;
+	box-shadow: 3px 3px 5px var(--shadow1),
+	-3px -3px 5px var(--shadow2),
+	3px 3px 5px inset var(--shadow1),
+	-3px -3px 2px inset var(--shadow2);
 }
 
-.container > textarea{
+.container > textarea, #note{
 	min-width: 100%;
 	resize: none;
-	color: #ffffff;
-	font-size: large;
+	color: var(--color);
+	font-size: xx-large;
+	font-family: 'Times New Roman', Times, serif;
+	font-variant: small-caps;
+}
+
+#note, #time {
+	font-size: x-large;
+}
+
+#time{
+	background-color: var(--bg);
+	color: var(--color);
+	max-width: 1;
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	margin: 0 1em;
+	padding: .25em .5em;
+	border-radius: .5em;
+	box-shadow: 3px 3px 5px var(--shadow1),
+	-3px -3px 5px var(--shadow2),
+	3px 3px 5px inset var(--shadow1),
+	-3px -3px 2px inset var(--shadow2);
 }
 
 .container > h1 {

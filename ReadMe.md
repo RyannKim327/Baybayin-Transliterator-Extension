@@ -31,6 +31,8 @@
 #### 0.0.2
 * Fixed not showing issue in kiwi browser
 * Added shortcut key [CTRL + Shift + K]
+* Total fixed dor (.) and comma (,) with next space error
+* Auto day and night based on time.
 
 #### 0.0.1
 * Added baybayin font (for unsupported devices)

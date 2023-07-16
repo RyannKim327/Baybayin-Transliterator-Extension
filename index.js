@@ -23,13 +23,14 @@ let toBaybayin = (str) => {
 				r += toString(baybay.E)
 			}else if(str.charAt(c) == 'o'){
 				r += toString(baybay.O)
-			}else if(str.charAt(c) == "n" && str.charAt(c + 1) == "g"){
+			}else if(str.charAt(c) == "n" && str.charAt(c + 1) == "g" && str[c - 1]){
 				let d = str.charAt(c + 2)
 				if(str.length > 4){
 					if(str.charAt(c - 1) == " " && str.charAt(c + 2) == " "){
 						r += toString(baybay.n) + toString(baybay.ng) + toString(baybay.a)
 						c += 1
 					}else{
+						// r += toString(baybay.n) + toString(baybay.ng) + toString(baybay.a)
 						r += toString(baybay.ng)
 						if(d == 'e' && d != 'a'){
 							r += toString(baybay.e)
@@ -42,7 +43,8 @@ let toBaybayin = (str) => {
 						c += 2
 					}
 				}else{
-					r += toString(baybay.ng)
+					r += toString(baybay.n) + toString(baybay.ng) + toString(baybay.a)
+					// r += toString(baybay.ng)
 					if(d == 'e' && d != 'a'){
 						r += toString(baybay.e)
 					}else if(d == 'o' && d != 'a'){
@@ -56,9 +58,11 @@ let toBaybayin = (str) => {
 			}else if(str.charAt(c) == "m" && str.charAt(c + 1) == "g"){
 				let d = str.charAt(c + 2)
 				if(str.length > 4){
-					if(str.charAt(c - 1) == " " && str.charAt(c + 3) == " "){
+					if(str.charAt(c - 1) == " " && str.charAt(c + 2) == " "){
 						r += toString(baybay.m)
+						r += toString(baybay.ng)
 					}else{
+						r += toString(baybay.m)
 						r += toString(baybay.ng)
 						if(d == 'e' && d != 'a'){
 							r += toString(baybay.e)
@@ -71,6 +75,7 @@ let toBaybayin = (str) => {
 						c += 2
 					}
 				}else{
+					r += toString(baybay.m)
 					r += toString(baybay.ng)
 					if(d == 'e' && d != 'a'){
 						r += toString(baybay.e)
@@ -82,6 +87,8 @@ let toBaybayin = (str) => {
 					}
 					c += 2
 				}
+			}else if ((str.charAt(c) == "," && str.charAt(c + 1) == " ") || (str.charAt(c) == "." && str.charAt(c + 1) == " ")){
+				r += toString(baybay[str.charAt(c)]) + " "
 			}else if(baybay[str.charAt(c)] == undefined && str.charAt(c) != 'a'){
 				r += str.charAt(c)
 			}else{
@@ -157,3 +164,16 @@ $("result").onclick = () => {
 		}, 1500)
 	}
 }
+
+setInterval(() => {
+	let root = document.querySelector(":root").style
+	let time = new Date()
+	if(time.getHours() >= 6 && time.getHours() <= 18){
+		root.setProperty("--bg", "#e0e0e0")
+		root.setProperty("--color", "#000000")
+	}else{
+		root.setProperty("--bg", "#23233e")
+		root.setProperty("--color", "#ffffff")
+	}
+	$("time").textContent = `${time.getHours()}: ${time.getMinutes()}`
+}, 100)
