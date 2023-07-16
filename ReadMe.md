@@ -28,11 +28,11 @@
 ---
 ### Changelogs
 
-### 0.0.1-Kiwi
+#### 0.0.1-Kiwi
 * Fixed not showing issue in kiwi browser
 * Added shortcut key [CTRL + Shift + K]
 
-### 0.0.1
+#### 0.0.1
 * Added baybayin font (for unsupported devices)
 * Fixed "**mga**" keyword and uneccessary viramas in "**,**" and "**.**" before space.
 * Changed from top attached to center popup window
