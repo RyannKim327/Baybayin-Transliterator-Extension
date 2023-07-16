@@ -1,6 +1,15 @@
 ### Baybayin Transliterator Extension
 #### MPOP Reverse II
 ---
+### Table of Contents
+| | |
+|---|---|
+| [Introduction](#introduction) | [Inspiration and history in Development](#inspiration-and-history-in-development) |
+| [How to use](#how-to-use) | [Feedback](#feedback) |
+| [Changelogs](#changelogs) | [Credits](#credits) |
+| [References](#references) | [License](#license)
+
+---
 ### Introduction
 > Baybayin is a Philippine script. The script is an abugida belonging to the family of the Brahmic scripts. Geographically, it was widely used in Luzon and other parts of the Philippines prior to and during the 16th and 17th centuries before being replaced by the Latin alphabet during the period of Spanish colonization. It is very different to the alibata (alif-bata), which some scholars known. Under House Bill 1022 or the proposed "National Writing System Act" is authored by Rep. Leopoldo Bataoil. The measure seeks to declare **Baybayin** as the Philippines’ national writing system, generating greater awareness on the plight of Baybayin and foster wider appreciation on its importance and beauty.
 
@@ -17,15 +26,30 @@
 > If ever you've encountered some bugs, kindly email me @ weryses19@gmail.com or message me on [facebook](https://facebook.com/MPOP.ph)
 
 ---
-### References
-* https://www.congress.gov.ph/press/details.php?pressid=10642
-* https://g.co/kgs/ZUNfme
-* https://www.lexilogos.com/keyboard/baybayin.htm (for font)
+### Changelogs
+
+### 0.0.1
+* Added baybayin font (for unsupported devices)
+* Fixed "**mga**" keyword and uneccessary viramas in "**,**" and "**.**" before space.
+* Changed from top attached to center popup window
+* Table of contents in ReadMe.md
+
+#### 0.0.1-Beta
+* Attached popup
+* Added clipboard copy
+* Added trivias and other information about baybayin as well as the inspiration of the development
+* References
 
 ---
 ### Credits
 * BadAimWeeb (for his extension as based of creating a new one)
 * [Baybayin - Philippine National Writing System](https://www.facebook.com/groups/Baybayin.PhilippineNationalWritingSystem/)
+
+---
+### References
+* https://www.congress.gov.ph/press/details.php?pressid=10642
+* https://g.co/kgs/ZUNfme
+* https://www.lexilogos.com/keyboard/baybayin.htm (for font)
 
 ---
 ### License
