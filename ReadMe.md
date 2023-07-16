@@ -28,6 +28,10 @@
 ---
 ### Changelogs
 
+### 0.0.2
+* Fixed not showing issue in kiwi browser
+* Added shortcut key [CTRL + Shift + K]
+
 ### 0.0.1
 * Added baybayin font (for unsupported devices)
 * Fixed "**mga**" keyword and uneccessary viramas in "**,**" and "**.**" before space.
