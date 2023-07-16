@@ -8,7 +8,7 @@ const baybay = {
 	"e": 5906, "o": 5907, "a": 5908,
 	".": 5942, ",": 5941
 }
-let toString = (code) => {
+const toString = (code) => {
 	return String.fromCharCode(code)
 }
 
@@ -56,7 +56,7 @@ let toBaybayin = (str) => {
 			}else if(str.charAt(c) == "m" && str.charAt(c + 1) == "g"){
 				let d = str.charAt(c + 2)
 				if(str.length > 4){
-					if(str.charAt(c - 1) == " " && str.charAt(c + 2) == " "){
+					if(str.charAt(c - 1) == " " && str.charAt(c + 3) == " "){
 						r += toString(baybay.m)
 					}else{
 						r += toString(baybay.ng)
@@ -132,7 +132,6 @@ let toBaybayin = (str) => {
 	}
 	return r
 }
-
 
 const $ = (id) => {
 	return document.getElementById(id)

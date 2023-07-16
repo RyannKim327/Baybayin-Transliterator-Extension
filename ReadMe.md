@@ -28,7 +28,7 @@
 ---
 ### Changelogs
 
-#### 0.0.1-Kiwi
+#### 0.0.2
 * Fixed not showing issue in kiwi browser
 * Added shortcut key [CTRL + Shift + K]
 

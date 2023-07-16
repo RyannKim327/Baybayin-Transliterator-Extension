@@ -1,6 +1,6 @@
 {
 	"name": "Baybayin Transliterator",
-	"version": "0.0.1-Kiwi",
+	"version": "0.0.2",
 	"author": "RyannKim327",
 	"permissions": [
 		"activeTab",
