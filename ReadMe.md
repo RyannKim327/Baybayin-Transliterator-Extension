@@ -28,10 +28,16 @@
 ---
 ### Changelogs
 
+#### 0.0.3
+* Changed algorithm
+* Added some double consonants
+* Fixed minor issue in "ng" but still in test
+* Fixed "mga"
+
 #### 0.0.2
 * Fixed not showing issue in kiwi browser
 * Added shortcut key [CTRL + Shift + K]
-* Total fixed dor (.) and comma (,) with next space error
+* Total fixed for (.) and comma (,) with next space error
 * Auto day and night based on time.
 
 #### 0.0.1
